@@ -1,7 +1,7 @@
 # topswiftrepos
-## App que listas os repositórios da linguagem Swift que possuem mais estrelas.
+### App que apresenta os repositórios da linguagem Swift que possuem mais estrelas no Github
 
-## Tecnologias Utilizadas:
+### Tecnologias Utilizadas:
 * Swift 5
 * Gerenciamento de Pacotes: Cocoapods
 * Arquitetura: VIPER
