@@ -121,18 +121,24 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="z9S-fd-cNo">
+                                <rect key="frame" x="197" y="465" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="z9S-fd-cNo" firstAttribute="centerX" secondItem="UFq-I2-inP" secondAttribute="centerX" id="2vS-MY-AHM"/>
                             <constraint firstItem="kaf-ms-cUn" firstAttribute="top" secondItem="UFq-I2-inP" secondAttribute="top" id="5iK-6M-vhI"/>
                             <constraint firstItem="kaf-ms-cUn" firstAttribute="leading" secondItem="UFq-I2-inP" secondAttribute="leading" id="JBT-du-am4"/>
                             <constraint firstAttribute="bottom" secondItem="kaf-ms-cUn" secondAttribute="bottom" id="NZy-W5-j6d"/>
                             <constraint firstItem="kaf-ms-cUn" firstAttribute="trailing" secondItem="UFq-I2-inP" secondAttribute="trailing" id="Xy8-ve-3Zs"/>
+                            <constraint firstItem="z9S-fd-cNo" firstAttribute="centerY" secondItem="UFq-I2-inP" secondAttribute="centerY" id="pBX-ad-7qm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UFq-I2-inP"/>
                     </view>
                     <navigationItem key="navigationItem" title=" Top Swift Github Repositories" id="xIH-sC-YI0"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="z9S-fd-cNo" id="puL-Rb-7dX"/>
                         <outlet property="tableviewRepositories" destination="kaf-ms-cUn" id="0qX-Ag-nB2"/>
                     </connections>
                 </viewController>

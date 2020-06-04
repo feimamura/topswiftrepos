@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableviewRepositories: UITableView!
     
     var presenter: ViewToHomePresenter?
@@ -76,9 +77,15 @@ extension HomeViewController: PresenterToHomeView {
     
     
     func willLoadRepositories() {
+        DispatchQueue.main.async {
+            self.activityIndicator.startAnimating()
+        }
     }
     
     func didEndLoadRepositories() {
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+        }
     }
     
     func showRepositories() {
